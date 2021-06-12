@@ -1,0 +1,9 @@
+---
+
+  - name: Create user {{ new_user }}
+    user:
+      name: '{{ new_user }}'
+      state: present
+      shell: /bin/bash
+      create_home: yes
+      home: /home/{{ new_user }}

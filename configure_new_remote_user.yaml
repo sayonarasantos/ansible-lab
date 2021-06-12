@@ -1,0 +1,12 @@
+---
+
+- hosts: hosts_accessed_by_new_remote_user
+  become: yes
+
+  vars_files:
+    - inventory/group_vars/new_remote_user.yaml
+
+  roles:
+    - role: roles/create-user
+    - role: roles/add-pub-ssh-key
+    - role: roles/change-owner

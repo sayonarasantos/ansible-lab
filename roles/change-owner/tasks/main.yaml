@@ -1,0 +1,17 @@
+---
+
+- name: Change folders ownership
+  file:
+    path: "{{ item }}"
+    state: directory
+    recurse: yes
+    owner: "{{ new_user }}"
+    group: "{{ new_user }}"
+  loop: "{{ folders_to_change_owner|default([]) }}"
+
+- name: Change files ownership
+  file:
+    path: "{{ item }}"
+    owner: "{{ new_user }}"
+    group: "{{ new_user }}"
+  loop: "{{ files_to_change_owner|default([]) }}"

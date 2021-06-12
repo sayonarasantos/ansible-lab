@@ -1,0 +1,5 @@
+# ansible access
+ansible_user: []
+ansible_become_password: []
+ansible_connection: ssh
+ansible_ssh_pass: []
