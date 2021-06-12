@@ -1,6 +1,6 @@
 # Ansible lab #
 
-Repositório com alguns playbooks voltados a configuração de serviços em Linux.
+Repositório com alguns playbooks voltados à configuração de serviços em Linux.
 
 
 ## Contribuidores
