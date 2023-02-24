@@ -3,10 +3,6 @@
 Repositório com alguns playbooks voltados à configuração de serviços em Linux.
 
 
-## Contribuidores
-- [Sayonara Santos](https://github.com/sayonarasantos)
-
-
 ## Configurações testadas
 - Ansible: 2.9
 - S.O.: Ubuntu 20.04
